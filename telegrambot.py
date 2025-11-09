@@ -12,7 +12,7 @@ OPENAI_API_KEY =  os.environ['sk-proj-CcbodC9Ycx-JMc5bONvFERsrntDJXcDYc4UgkwtbIA
 
 openai.api_key = OPENAI_API_KEY
 
-updater = Updater("TELEGRAM_BOT_TOKEN",
+updater = Updater(TELEGRAM_BOT_TOKEN,
                   use_context=True)
 
 
@@ -54,6 +54,7 @@ updater.dispatcher.add_handler(MessageHandler(Filters.text & (~Filters.command) 
 
 
 updater.start_polling()
+
 
 
 
